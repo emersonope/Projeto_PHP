@@ -9,7 +9,7 @@
 <?php 
     $servername = "localhost";
     $username   = "root";
-    $password   = "9358Ope$";
+    $password   = "";
     $database   = "boomsell";
 
     //Criando a conexão com BD
