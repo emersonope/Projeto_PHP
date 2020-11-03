@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+/* edição dos produtos nas páginas produto e inicial*/
+.produtos {
+
+   width: 80%;
+   height: 1000px;
+   display: inline-block;
+   margin: -170px auto 0px 190px;
+   padding: 10px 0px 10px 10px;
+
+}
+
+hr{
+   width: 180px;
+}
+
+.geral {
+
+   position: relative;
+   display: inline-block;
+   text-align: center;
+
+}
+.geral img{
+
+   width: 160px;
+   height: 170px;
+   border: 6px solid rgba(255, 255, 255, 0.5);
+   box-shadow: 1px 1px 4px black;
+   margin: 45px;
+   margin-bottom: 0;
+   
+   
+   
+}
+
+.geral h3{
+
+   font-family: Arial, Helvetica, sans-serif;
+   color: #606060;
+   font-size: 15px;
+   margin-bottom: 0px;
+   margin-top: 0px;
+   justify-content: center;
+   text-align: center;
+
+}
+.geral p{
+
+   margin-bottom: 0px;
+   
+   color: crimson;
+   text-decoration: line-through;
+   justify-content: center;
+   text-align: center;
+   margin-bottom: 0px;
+   margin-top: 0px;
+   
+
+}
+.geral h5{
+
+   margin-top: 0px;
+   margin-bottom: 0px;
+   color: #888888;
+   text-align: center;
+  
+}
+
+
+/*menu categoria*/
+
+.categoria{
+
+   width: 173px;
+   margin-top: 100px;
+   
+
+}
+
+.categoria ul li {
+
+    
+    color: #8b8b8b;
+    margin-left: 18px;
+    margin-bottom: 8px;
+    cursor: pointer;
+
+}/*
+.categoria ul li:hover{
+
+    border-bottom: 2px solid #00bac6;
+
+}*/
+.categoria ul li a:hover {
+
+    color: #00bac6;
+    
+
+}
+.categoria ul li a{
+
+
+    color: #8b8b8b;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 5px;
+    
+
+}
+
+.categoria h2{
+
+
+    color: #8b8b8b;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
