@@ -1,20 +1,5 @@
 <?php include_once("conexaoBD.php"); ?>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <link rel="stylesheet" type="text/css" href="./_css/slyle.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="./_js/produto.js"></script>
-    <script src="./_js/index.js"></script>
-    <meta charset="UTF-8">
-    <title>BoomSell</title>
-</head>
-<body>
-<?php include_once("header.html"); ?>
+<?php include_once("header.php"); ?>
 <?php 
     if(isset($_POST['nome']) && isset($_POST['endereco']) && isset($_POST['telefone']) && isset($_POST['nomeproduto']) && isset($_POST['quantidade'])){
 
@@ -40,7 +25,7 @@
 
     }
 ?>  
-<section class="container">
+<section class="container mb-5">
 <form method="POST" name="pedidos" action="">
     <div class="form-group">
         <label for="nome">Nome: </label><br>
@@ -74,5 +59,5 @@
 
 </form>  
 </section>
-</body>
-</html>   
+
+<?php include_once("footer.php"); ?>

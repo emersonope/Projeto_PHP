@@ -1,113 +1,67 @@
-<?php include_once("conexaoBD.php"); ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <link rel="stylesheet" type="text/css" href="./_css/slyle.css">
-    <link rel="stylesheet" type="text/css" href="./_css/slider.css">
-    <script src="./_js/index.js"></script>
-    <meta charset="UTF-8">
-    <title>BoomSell</title>
-
-</head>
-
-<body>
-  
-<?php include_once("header.html"); ?>
-
+<?php include_once("header.php"); ?>
 <!--Slider abaixo-->
 
-<section class="section1">
-<div class="container">
-  
-    <ul class="slider">
-      <li id="slide1">
-        <img src="./_img/banner.jpg"/>
-      </li>
-      <li id="slide2">
-        <img src="./_img/logo_size.jpg"/>
-      </li>
-      <li id="slide3">
-        <h1>Este texto é um exemplo com outros elementos</h1>
-        <p>Este texto server para demonstrar que podemos incluir texto em um slider</p>
-        
-      </li>
-    </ul>
-    
-    <ul class="menu-slider">
-      <li>
-        <a href="#slide1">1</a>
-      </li>
-      <li>
-        <a href="#slide2">2</a>
-      </li>
-       <li>
-        <a href="#slide3">3</a>
-      </li>
-    </ul>
-    
-  </div>
-</section>
-<section class="titulo_produtos">
-<h2 >Confira Nossos Produtos Mais Vendidos</h2><br>
-</section>
-<section class="section2">
-  
-
-    <div class="container2" onmouseover="container()" onmouseout="zoom_fora()" id="cont_1">
-      
-        <ul class="slider2">
-          <li> 
-            <img  src="./_img/tokyoghoul2.jpg"/>
-          </li>
-          </ul>  
-        
-      </div class="slider2">
-      <div class="container2" onmouseover="container1()" onmouseout="zoom_fora1()" id="cont_2">
-      
-        <ul class="slider2">
-          <li>
-            <img  src="./_img/ps5.webp">
-          </li>
-          </ul>  
-        
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./_img/banner.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./_img/banner.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./_img/banner.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <div class="container2" onmouseover="container2()" onmouseout="zoom_fora2()" id="cont_3">
-      
-        <ul class="slider2">
-          <li>
-            <img  src="./_img/HeadsetPulse3d.webp"/>
-          </li>
-          </ul>  
-        
+  <!-- final slider-->
+  
+<section class="container container2 my-5" >
+  <h2 >Confira Nossos Produtos Mais Vendidos</h2><br>
+  <div class="row" >
+    <div class="rol">
+        <div class="card m-3" style="width: 18rem; " onmouseover="container()" onmouseout="zoom_fora()" id="cont_1" >
+          <img class="card-img-top" src="./_img/tokyoghoul2.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+            <a href="#" class="btn btn-primary ml-4">Confira nossos Produtos</a>
+          </div>
+        </div>
       </div>
-      
-    </section>
-<footer class="rodape" id="rodape">
-    <ul>
-<li>
-    <a href="pagamento.html">Formas de Pagamento</a>
-</li>
-    <li>
-    <a href="conta.html">Minha Conta</a>
-</li>
-    <li>
-    <a href="contato.html">Fale Conosco</a>
-</li><li>
-
-    <a href="trocas.html">Trocas e Devoluções</a>
-</li>
-    <li>
-    <a href="sobrenos.html">Sobre Nós</a>
-</li>
-</ul>
-
-
-</footer>
-
-
-
-
-</body>
-
-</html>
+    <div class="rol">
+      <div class="card m-3" style="width: 18rem;" onmouseover="container1()" onmouseout="zoom_fora1()" id="cont_2">
+          <img class="card-img-top" src="./_img/ps5.webp" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+            <a href="#" class="btn btn-primary ml-4">Confira nossos Produtos</a>
+          </div>
+        </div>
+      </div>
+    <div class="rol">
+      <div class="card m-3" style="width: 18rem;" onmouseover="container2()" onmouseout="zoom_fora2()" id="cont_3">
+          <img class="card-img-top" src="./_img/HeadsetPulse3d.webp" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+            <a href="#" class="btn btn-primary ml-4">Confira nossos Produtos</a>
+          </div>
+        </div>
+      </div>
+  </div>  
+</section>
+<?php include_once("footer.php"); ?>
