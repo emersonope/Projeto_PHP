@@ -63,9 +63,12 @@
       <div class="col-md-2 mx-auto">
 
         <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Jnte-se ao time</h5>
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Utilidades</h5>
 
         <ul class="list-unstyled">
+        <li>
+            <a href="trocas.php">Politica de trocas</a>
+          </li>
           <li>
             <a href="#!">Trabalhe conosco</a>
           </li>
