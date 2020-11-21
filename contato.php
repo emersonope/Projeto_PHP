@@ -37,14 +37,14 @@ if(isset($_POST['nome']) && isset($_POST['msg'])){
   <!-- final slider-->
 <div class="container">
     <div class="row">
-        <div class="col-6 text-justify">
+        <div class="col-md-6 text-justify">
         <h1>standard Lorem Ipsum passage, used since the 1500s</h1>
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p> 
-        <img src="./_img/banner.jpg" class="mr-3 img-fluid" />
+        <img src="./_img/banner.jpg" class=" img-fluid" />
         </div>
         
     
-        <div class="col-6 text-justify">
+        <div class="col-md-6 text-justify">
         <h1> 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h1>
        
         <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
@@ -56,60 +56,71 @@ if(isset($_POST['nome']) && isset($_POST['msg'])){
   <h2 >Confira Nossos Produtos Mais Vendidos</h2><br>
   <div class="row" >
     <div class="rol">
-        <div class="card m-3" style="width: 18rem; "  >
-          <img class="card-img-top" src="./_img/banner.jpg" alt="Imagem de capa do card">
-          <div class="card-body">
-                <p class="card-text">
-                <h3>Rio de Janeiro</h3>
-                <p><strong> Avenida Brasil, 5.555</strong></p>
-                <p><em>25 &ordm; andar</em></p>
-                <p> Centro</p>
-                <p>(21) 2222-2222</p>
-          </div>
+      <div class="card m-3" style="width: 18rem; "  >
+            <img class="card-img-top" src="./_img/banner.jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+            <h3 class="card-title">Rio de Janeiro</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Avenida Brasil, 5.555</li>
+            <li class="list-group-item">25 º andar</li>
+            <li class="list-group-item">Centro</li>
+            <li class="list-group-item">(21) 2222-2222</li>
+          </ul>
         </div>
       </div>
+    </div>
+
     <div class="rol">
       <div class="card m-3" style="width: 18rem;" >
-          <img class="card-img-top" src="./_img/banner.jpg" alt="Imagem de capa do card">
-          <div class="card-body">
-                <p class="card-text">
-                <h3>São Paulo</h3>
-                <p><strong> Avenida Aricanduva, 5.555</strong></p>
-                <p><em> Loja 54</em></p>
-                <p> Jardim Aricanduva</p>
-                <p>(21) 2222-2222</p>
-          </div>
+            <img class="card-img-top" src="./_img/banner.jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+            <h4 class="card-title">São Paulo</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Avenida Aricanduva, 5.555</li>
+            <li class="list-group-item">Loja 54</li>
+            <li class="list-group-item">Jardim Aricanduva</li>
+            <li class="list-group-item">(21) 2222-2222</li>
+          </ul>
         </div>
       </div>
+    </div>
+
     <div class="rol">
       <div class="card m-3" style="width: 18rem;" >
-          <img class="card-img-top" src="./_img/banner.jpg" alt="Imagem de capa do card">
-          <div class="card-body">
-                <p class="card-text">
-                <h3>Rio Grande Do Norte</h3>
-                <p><strong> Avenida Alguma Coisa, Natal</strong></p>
-                <p><em>10 &ordm; andar</em></p>
-                <p> Centro</p>
-                <p>(21) 2222-2222</p>
-          </div>
+            <img class="card-img-top" src="./_img/banner.jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+            <h4 class="card-title">Rio Grande Do Norte</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Avenida Alguma Coisa, Natal</li>
+            <li class="list-group-item">10 &ordm; andar</li>
+            <li class="list-group-item">Centro</li>
+            <li class="list-group-item">(21) 2222-2222</li>
+          </ul>
         </div>
       </div>
+    </div>
   </div>  
 </section>
-<section class="container mb-5">
+<section class="container p-5 mb-5">
 <form method="post" action="" >
-  <div class="row">
-    <div class="col-12 form-group">
-      <label for="nome">Nome:</label>
-      <input type="text" name="nome" class="form-control" placeholder="Nome">
-    </div>
-  <div class="form-group col-12" >
-    <label for="mensagem">Mensagem</label>
-    <textarea class="form-control" name="msg" type="text" id="emensagem" rows="3"></textarea>
+<label for="basic-url">Envie-nos sua mensagem: </label>
+  
+  <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Nome</span>
+      </div>
+        <input type="text" name="nome" class="form-control" placeholder="Nome">
   </div>
-  <div class="col-12">
+  <div class="input-group mb-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Mensagem</span>
+      </div>
+      <textarea class="form-control"  name="msg" type="text" id="mensagem" rows="3" aria-label="Com textarea"></textarea>
+  </div>
+  
+  
   <input type="submit" name="submit" value="Enviar" class="btn btn-danger">
-</div>
+
 </form>
 
 

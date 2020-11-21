@@ -22,12 +22,22 @@
                 while($rows = $result->fetch_assoc()){
     ?>
 
-        <div  class="geral" id="<?php echo $rows["categoria"]; ?>" onclick="destaque(this)">
-            <div><img onmouseover="trocarImagem1()" onmouseout="imagemAnterior1()" src="<?php echo $rows["nomeimagem"]; ?>" src = "<?php echo $rows["nomeimagem2"]; ?>" id="id1" alt="Playstation"></div>
-            <div><h3><?php echo $rows["descricao"]; ?></h3></div>
+        <div  class="geral " id="<?php echo $rows["categoria"]; ?>" onclick="destaque(this)">
+            
+            <div>
+                <img onmouseover="trocarImagem1()" onmouseout="imagemAnterior1()" src="<?php echo $rows["nomeimagem"]; ?>" src = "<?php echo $rows["nomeimagem2"]; ?>" id="id1" alt="Playstation">
+            </div>
+            
+            <div>
+                <h3><?php echo $rows["descricao"]; ?></h3>
+            </div>
             <hr/>
-            <div><p><?php echo $rows["preco"]; ?></p></div>
-            <div><h5> <?php echo $rows["precofinal"]; ?></h5></div>
+            <div>
+                <p><?php echo $rows["preco"]; ?></p>
+            </div>
+            <div>
+                <h5> <?php echo $rows["precofinal"]; ?></h5>
+            </div>
         
         </div>
 

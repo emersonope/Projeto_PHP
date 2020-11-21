@@ -25,7 +25,7 @@
 
     }
 ?>  
-<section class="container mb-5">
+<section class="container p-5 mb-5">
 <form method="POST" name="pedidos" action="">
     <div class="form-group">
         <label for="nome">Nome: </label><br>
@@ -55,7 +55,7 @@
         <label for="valorfinal">Valor Total:</label><br>
         <input type="text" class="form-control"  id="valorfinal" name="valorfinal"  maxlength = "30" required /><br>
     </div>
-        <input type="submit" class="btn btn-primary" class="submit" value="Enviar" />
+        <input type="submit" class="btn btn-danger" class="submit" value="Enviar" />
 
 </form>  
 </section>

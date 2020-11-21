@@ -1,6 +1,10 @@
 <?php include_once("header.php"); ?>
 <!--Slider abaixo-->
 
+
+
+
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -38,7 +42,7 @@
           <div class="card-body">
             <h5 class="card-title">Título do card</h5>
             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-            <a href="#" class="btn btn-primary ml-4">Confira nossos Produtos</a>
+            <a href="#" class="btn btn-danger ml-4">Confira nossos Produtos</a>
           </div>
         </div>
       </div>
@@ -48,7 +52,7 @@
           <div class="card-body">
             <h5 class="card-title">Título do card</h5>
             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-            <a href="#" class="btn btn-primary ml-4">Confira nossos Produtos</a>
+            <a href="#" class="btn btn-danger ml-4">Confira nossos Produtos</a>
           </div>
         </div>
       </div>
@@ -58,7 +62,7 @@
           <div class="card-body">
             <h5 class="card-title">Título do card</h5>
             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-            <a href="#" class="btn btn-primary ml-4">Confira nossos Produtos</a>
+            <a href="#" class="btn btn-danger ml-4">Confira nossos Produtos</a>
           </div>
         </div>
       </div>
