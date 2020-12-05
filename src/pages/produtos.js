@@ -9,7 +9,7 @@ function Produtos() {
     const [ produtos, setProdutos] = useState([]);
 
     useEffect(async () => {
-        const resposta = await fetch("http://react/api/produtos.php?table=produtos")
+        const resposta = await fetch("http://react/backend/produtos-lista.php")
         const dados = await resposta.json()
         setProdutos(dados)
     }, []);

@@ -1,16 +1,15 @@
-import {useState} from 'react';
-import { form, Button, Row, Form} from 'react-bootstrap';
-
+import { Button, Form } from 'react-bootstrap';
+import { useState } from 'react';
 
 function Pedidos() {
     const [ form, setForm ] = useState({
         nome: "",
         endereco: "",
-        fone: "",
-        nomeproduto: "",
+        telefone: "",
+        produto: "",
         valorunitario: "",
         quantidade: "",
-        valorfinal: "",
+        valortotal: "",
     } )
 
     const controleMudanca = (evento) => {
@@ -23,57 +22,55 @@ function Pedidos() {
         console.log(form);
     }
 
-    const controleEnvio = async (evento) => {
+    async function cadastroPedidos(evento) {
         evento.preventDefault();
-        //consolelog("Enviando")
-        const valorfinal = parseFloat(form.valorunitario)*parseFloat(form.quantidade);
+
+        const valortotal = parseFloat(form.valorunitario)*parseFloat(form.quantidade);
         //console.log(valorfinal);
-        document.getElementById("valorfinal").value = `R$ ${valorfinal}`;
+        document.getElementById("valortotal").value = `R$ ${valortotal}`;
 
-        const json = JSON.stringify(form);
+        let formData = new FormData(evento.target);
+        const url = 'http://react/backend/pedidos-guarda.php';
 
-        const opcoes = {
-            method: 'POST',
-            headers: { 'Content-type' : 'application/json', "access-control-allow-headers":"*"},  
-            body: json
-        }
+        fetch(url, {
+            method: "POST",
+            body: formData
+        }).then((response) => console.log(response.json())).then((dados) => {
 
-        const resposta = await fetch("http://react/api/cadastro.php", opcoes)
-        const dados = await resposta.json()
-        console.log(dados);       
-    
+            console.log("euu", "dados");
+        });
     }
 
     return (
         <section class="container p-5 mb-5">
-<Form onSubmit={controleEnvio}>
+<Form onSubmit={cadastroPedidos}>
     <Form.Group>
         <Form.Label for="nome">Nome: </Form.Label><br/>
-        <Form.Control onChange={controleMudanca} type="text" class="form-control"  id="nome"   maxlength = "30" required /><br/>
+        <Form.Control onChange={controleMudanca} type="text" class="form-control"  id="nome" name="nome"  maxlength = "30" required /><br/>
     </Form.Group>
     <Form.Group>
         <Form.Label for="endereco">Endereço:</Form.Label><br/>
-        <Form.Control onChange={controleMudanca} type="text" class="form-control"  id="endereco"   maxlength = "30" required /><br/>
+        <Form.Control onChange={controleMudanca} type="text" class="form-control"  id="endereco" name="endereco"  maxlength = "30" required /><br/>
     </Form.Group>
     <Form.Group>
         <Form.Label for="telefone">Telefone (Ex: (11) 00000-0000):</Form.Label><br/>
-        <Form.Control onChange={controleMudanca} placeholder="Ex: (00) 00000-0000" type="tel" class="form-control"  id="fone"  maxlength = "15" required /><br/>
+        <Form.Control onChange={controleMudanca} placeholder="Ex: (00) 00000-0000" type="tel" class="form-control"  id="telefone" name="telefone"  maxlength = "15" required /><br/>
     </Form.Group>
     <Form.Group>
-        <Form.Label for="nomeproduto">Produto:</Form.Label><br/>
-        <Form.Control onChange={controleMudanca} type="text" class="form-control"  id="nomeproduto"   maxlength = "80" required /><br/>
+        <Form.Label for="produto">Produto:</Form.Label><br/>
+        <Form.Control onChange={controleMudanca} type="text" class="form-control"  id="produto" name="produto"   maxlength = "80" required /><br/>
     </Form.Group>
     <Form.Group>
         <Form.Label for="valorunitario">Valor Unitário:</Form.Label><br/>
-        <Form.Control onChange={controleMudanca} type="text" class="form-control"  id="valorunitario"   maxlength = "30" required /><br/>
+        <Form.Control onChange={controleMudanca} type="text" class="form-control"  id="valorunitario" name="valorunitario"  maxlength = "30" required /><br/>
     </Form.Group>
     <Form.Group>
         <Form.Label for="quantidade">Quantidade:</Form.Label><br/>
-        <Form.Control onChange={controleMudanca} type="number" class="form-control"  id="quantidade"   maxlength = "30" required /><br/>
+        <Form.Control onChange={controleMudanca} type="number" class="form-control"  id="quantidade" name="quantidade"  maxlength = "30" required /><br/>
     </Form.Group>
     <Form.Group>
-        <Form.Label for="valorfinal">Valor Total:</Form.Label><br/>
-        <Form.Control desabled type="text" class="form-control"  id="valorfinal" maxlength = "30"  /><br/>
+        <Form.Label for="valortotal">Valor Total:</Form.Label><br/>
+        <Form.Control  type="text" class="form-control"  id="valortotal" name="valortotal" maxlength = "30"  /><br/>
     </Form.Group>
         <Button type="submit" variant="danger" >Enviar</Button>
         
