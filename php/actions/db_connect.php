@@ -3,7 +3,7 @@
     function query($sql) { 
         $servername = "localhost"; 
         $username = "root"; 
-        $password = "9358Ope$"; 
+        $password = ""; 
         $database = "boomsell"; 
  
         $conn = mysqli_connect($servername, $username, $password, $database); 
@@ -15,7 +15,7 @@
     function nonquery($sql) { 
         $servername = "localhost"; 
         $username = "root"; 
-        $password = "9358Ope$"; 
+        $password = ""; 
         $database = "boomsell"; 
  
         $conn = mysqli_connect($servername, $username, $password, $database); 
