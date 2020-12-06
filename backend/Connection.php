@@ -6,7 +6,7 @@ class Connection
     {
         $conn = new PDO(
             "mysql:host=localhost;dbname=boomsell;charset=utf8",
-            "root","9358Ope$");
+            "root","");
 
         if ($conn) {
             return $conn;
