@@ -1,0 +1,47 @@
+
+/* CONFIGUARÇÃO DAS IMAGENS EXCLUSIVAMENTE NA PÁGINA INICIAL*/
+
+/*.produtos {
+
+    display: flex;
+    justify-content: center;/*horizontal*/
+    align-items: center; /*vertical*/
+    font-weight: bold;
+    font-family: 'Lucida Sans';
+}
+
+/*configuração da classe div de produtos*/
+
+/*div#marketing {
+
+    display: inline-block;
+    background-color: white;
+    padding: 2px;/*tamanho do post*/
+    margin: 30px; /*espaçamento vertical e horizontal*/
+    border: 1px solid gray;
+    border-radius: 10px;
+
+}
+/*div#marketing img {
+
+    width: 100%;
+    height: 200px;
+    width: 200px;
+}
+/*titulo dos produtos para todas as páginas*/
+/*.titulopaginageral {
+
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+}
+/*fonte do texto em todas as páginas */
+div#texto {
+
+    text-align: justify;
+    text-indent: 20px;
+
+} 
+
+
+/*interface da página*/

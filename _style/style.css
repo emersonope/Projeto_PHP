@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+
+/*Edição do corpo do site*/
+
+body {
+
+    background-color: #E8E8E8;
+
+}
+
+/* Edição do menu */
+
+nav#menu {
+
+    display: block;
+
+}
+
+nav#menu ul {
+
+    
+     font-weight: bold;
+     list-style: none;
+     text-transform: uppercase;
+     position: absolute;
+     top: -20px;
+     left: 650px;
+ 
+ }
+
+ /*nessa sessão serão editados a fonte, cor de fundo, transição e navegabilidade*/
+nav#menu li {
+
+    display: inline-block;
+    background: #e02041;
+    padding: 10px; /*tamanho da borda do plano de fundo*/
+    margin: 2px; /*espaçamento entre os itens do menu*/
+    transition: background-color 1.5s; /*tempo da transição ocorrer*/
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px black; /* sombra do menu */
+
+}
+
+/*transição do menu ao passar o mouse em cima*/
+nav#menu li:hover {
+
+    background-color: green;
+}
+/*esconder o "Menu Pricipal na tag h1*/
+nav#menu h1 {
+
+    display: none;
+
+}
+/*cor do texto do menu e tirar o sublinhado*/
+nav#menu a {
+
+    color: white;
+    text-decoration: none;
+
+}
+/*cor do texto ao "linkar" com outra pragina e passar o mouse sobre*/
+nav#menu a:hover {
+
+    color: black;
+
+}
+/*borda do menu*/
+header#cabecalho{
+
+
+border-bottom: 1px #606060 solid;
+height: 110px;
+
+}
+
+header#cabecalho h1 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    color: #606060 ;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: -30px;
+    
+}
+header#cabecalho h2 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    color: #888888 ;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-top: 0px;
+
+}
+/*interface da página*/
+div#interface {
+
+    width: 1100px;
+    background-color: #ffffff;
+    margin: -100px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+}
+
+
+/*rodape*/
+footer#rodape {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+h4#pagamento {
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888888;
+    text-align: center;
+    
+
+}
+footer#rodape img {
+
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 6px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 4px black;
+
+
+}
+

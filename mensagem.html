@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BoomSell</title>
+    <link rel="stylesheet" type="text/css" href="_style/style.css" />
+    <link rel="stylesheet" type="text/css" href="_style/mensagem.css" />
+</head>
+
+<body>
+    <div id="interface"><br><br><br><br><br><br>
+        <!--Menu principal-->
+        <header id="cabecalho">
+            <hgroup>
+                <h1> BoomSell</h1>
+                <h2>A revolução digital chegou</h2>
+            </hgroup>
+
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li><a href=""><a href="index.html">Página Principal </a></li>
+                    <li><a href="produtos.html"> Produtos </a></li>
+                    <li><a href="sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form method="post" action="mailto emersonope@gmail.com">
+            <br><br><br>
+            <table rules=cols class="tabela">
+                <tr>
+                    <th>Qual Seu Gênero:</th>
+
+                    <th>Já Ouviu Falar de Nós? Se Sim! Onde:</th>
+                    <th colspan="4">Dados Pessoais:</th>
+                </tr>
+                <tr>
+                    <td>
+                        <br><input type="radio" id="masculino" name="genero" value="masculino">
+                        <label for="masculino">Masculino</label></td>
+
+                    <td>
+                        <br><input type="checkbox" name="canal" value="Linkedin" /> Linkedin
+                    </td>
+
+                    <td><label for="dat"><br>Data de Nascimento</label><br></td>
+                    <td><br><input type="date" id="dat" name="DataNascimento"></td>
+
+                    <td><label for="pname"><br><br>Nome:<br><br></label></td>
+                    <td><br><input type="text" id="pname" name="NomeCompleto"></td><b>
+                </tr>
+                <tr>
+                    <td><br> <input type="radio" id="feminino" name="genero" value="feminino">
+                        <label for="feminino">Feminino</label></td>
+                    <td><br><input type="checkbox" name="canal" value="Instagram" /> Instagram </td>
+
+                    <td><label for="endereco"><br>Endereço:</label></td>
+                    <td><br><input type="text" id="endereco" name="EnderecoCompleto"><br></td>
+
+                    <td><label for="cep"><br>CEP:</label></td>
+                    <td><br><input type="text" id="cep" name="CEPdaRua" maxlength="9" placeholder="13483-000"></td>
+
+                </tr>
+                <tr>
+                    <td><br><input type="radio" id="outros" name="genero" value="outros">
+                        <label for="outros">Outros</label></td>
+
+                    <td> <br><input type="checkbox" name="canal" value="Outros" /> Outros </td>
+
+                    <td><label for="bairro"><br>Bairro:</label></td>
+                    <td><br><input type="text" id="bairro" name="BairroCompleto"></td>
+
+                    <td><label for="cidade"><br><br>Cidade:<br><br></label></td>
+                    <td><br><input type="text" id="cidade" name="NomeDaCidade"></td>
+
+
+                </tr>
+
+            </table>
+            <div id="mensagemcaixa">
+                <label for="msg">Mensagem:</label><br>
+                <textarea id="msg" rows="5" cols="100"></textarea><br><br>
+            </div>
+            <br><br>
+
+            <input class="tabela" type="submit" />
+        </form>
+    </div>
+</body>
+
+</html>
