@@ -30,7 +30,7 @@ function Pedidos() {
         document.getElementById("valortotal").value = `R$ ${valortotal}`;
 
         let formData = new FormData(evento.target);
-        const url = 'http://localhost:3005/pedido';
+        const url = 'http://localhost:3005/postando';
 
         await fetch(url, {
 
