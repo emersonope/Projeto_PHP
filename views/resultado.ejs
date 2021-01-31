@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src='main.js'></script>
+    </head>
+    <body>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Email</th>
+                </tr> 
+            </thead>     
+            <tbody>
+                <% for(var i=0; i<buscar.length; i++) {%>
+                    <tr>
+                        <td><%= buscar[i].id %></td>
+                        <td><%= buscar[i].nome %></td>
+                        <td><%= buscar[i].sobrenome %></td>
+                        <td><%= buscar[i].email %></td>
+                    </tr>
+                <% } %>
+                
+            </tbody>
+        </table>
+        <a href="/" class="btn btn-dark">Cadastrar outros dados</a>
+    </body>
+</html>
