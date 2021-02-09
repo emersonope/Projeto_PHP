@@ -2,8 +2,11 @@ import {useState, useEffect} from 'react';
 import axios from "axios";
 import 'react-bootstrap';
 import "./produtos.css";
-import Produto from "../components/Menu/produtos/produto"
+//import Produto from "../components/Menu/produtos/produto"
 import { Container, Row } from 'react-bootstrap';
+
+import {lazy, Suspense} from 'react';
+const Produto = lazy(() => import("../components/Menu/produtos/produto"));
 
 function Produtos() {
     const [ produtos, setProdutos] = useState([]);
@@ -38,9 +41,9 @@ function Produtos() {
 
             </div> 
                 <Container fluid >
-                    <Row >
+                    <Suspense fallback={<div>Carregando ...</div>}>
                         {produtos && produtos.map(item => <Produto nomeimagem={item.nomeimagem} preco={item.preco} precofinal={item.precofinal} descricao={item.descricao} />)}
-                    </Row>
+                    </Suspense>
                 </Container>
         </div>               
     )   
