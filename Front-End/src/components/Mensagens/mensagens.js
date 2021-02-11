@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Table } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 
 
@@ -9,18 +9,18 @@ function Mensagens(){
     const { register, handleSubmit } = useForm();
   
     const handleOnSubmit = (data) => {
-      axios.post("http://localhost:3210/contatos", data).then((response) => {
-        alert("Cadastrado com Sucesso");  
+      axios.post("http://localhost:8000/mensagens", data).then((response) => {
+        alert("Enviado com Sucesso");  
         window.location.reload()
       });
     };
 
-    const [contatos, setContatos] = useState([]);
+    const [mensagens, setMensagens] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:3210/contatos").then((response) => {
-        setContatos(response.data.contatos);
-        console.log(setContatos)
+        axios.get("http://localhost:8000/mensagens").then((response) => {
+        setMensagens(response.data.mensagens);
+        console.log(setMensagens)
         });
     }, []);
 
@@ -30,23 +30,22 @@ function Mensagens(){
         <h2>Contato</h2>
         <hr />
         <div class="container">
-            <form onSubmit={handleSubmit(handleOnSubmit)}>
-                <div class="form-group">
-                    <h4>Nome:</h4>
-                    <input type="text" name="nome" placeholder="Digite seu nome ..." class="form-control" ref={register} />
-                </div>
-                <div class="form-group">
-                    <h4>Email:</h4>
-                    <input type="text" name="email" placeholder="Digite seu email ..." class="form-control" ref={register} />
-                </div>
-                <div class="form-group">
-                    <h4>Mensagem:</h4>
-                    <textarea name="menssagem" placeholder="Digite sua mensagem ..." class="form-control" ref={register}></textarea>
-                </div>   
+            <Form onSubmit={handleSubmit(handleOnSubmit)}>
+                <Form.Group>
+                    <Form.Label>Nome:</Form.Label>
+                    <Form.Control type="text" name="nome" placeholder="Digite seu nome ..." class="form-control" ref={register} />
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label>Email:</Form.Label>
+                    <Form.Control type="text" name="email" placeholder="Digite seu email ..." class="form-control" ref={register} />
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label>Mensagem:</Form.Label>
+                    <Form.Control as="textarea" name="mensagem" placeholder="Digite sua mensagem ..." class="form-control" ref={register} />
+                </Form.Group>   
                 <br />
-                <input type="submit" value="Enviar" />
-            </form>
-           
+                <Button type="submit" variant="dark">Enviar</Button>
+            </Form>
             </div>
         </div>
     )

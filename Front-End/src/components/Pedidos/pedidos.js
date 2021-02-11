@@ -74,7 +74,7 @@ function Pedidos() {
         <Form.Label for="valortotal">Valor Total:</Form.Label><br/>
         <Form.Control  type="text" class="form-control"  id="valortotal" name="valortotal" maxlength = "30"  /><br/>
     </Form.Group>
-        <Button type="submit" variant="danger" >Enviar</Button>
+        <Button type="submit" variant="dark" >Enviar</Button>
         
 
 </Form>  
