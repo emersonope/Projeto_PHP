@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Button, Form } from "react-bootstrap";
+import { Table, Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 
 
