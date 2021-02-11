@@ -46,6 +46,25 @@ function Mensagens(){
                 <br />
                 <Button type="submit" variant="dark">Enviar</Button>
             </Form>
+            <br /><br />
+                <div class="container-fluid">
+                    <Table striped bordered hover>
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Menssagem</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {mensagens && mensagens.map((item) => (
+                        <tr key={item._id}>
+                            <td>{item.nome}</td>
+                            <td>{item.mensagem}</td>
+                        </tr>
+                        ))}
+                        </tbody>
+                    </Table>
+                </div>
             </div>
         </div>
     )
