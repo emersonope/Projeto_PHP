@@ -18,9 +18,8 @@ function Mensagens(){
     const [mensagens, setMensagens] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:8000/mensagens").then((response) => {
-        setMensagens(response.data.mensagens);
-        console.log(setMensagens)
+        axios.get("http://localhost:8000/mensagens").then(function(response){
+        setMensagens(response.data);
         });
     }, []);
 
