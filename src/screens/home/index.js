@@ -3,9 +3,6 @@ import {
   View,
   Text,
   TouchableOpacity,
-  Image,
-  ScrollView,
-  ImageBackground,
 } from "react-native";
 
 import styles from "./styles";
@@ -46,7 +43,7 @@ function Home({ navigation }) {
             </Text>
             <TouchableOpacity style={styles.button} onPress={ver}>
               <Text style={{ color: "#F1F1F1", fontSize: 20, fontWeight: "bold" }}>
-                Ver Produtos
+                Produtos
               </Text>
             </TouchableOpacity>
             <TouchableOpacity

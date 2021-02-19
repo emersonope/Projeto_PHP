@@ -4,7 +4,6 @@ const styles = StyleSheet.create({
   conteiner: {
         height: Platform.OS === "web" ? "100vh" : "100%",
         backgroundColor: '#292929',
-        //web 100vh
     },
     conteudo: {
         width: "100%",
@@ -36,7 +35,7 @@ const styles = StyleSheet.create({
         width: 70,
         margin: 15,
         alignItems: "center",
-        borderRadius: '50%',
+        borderRadius: 50,
         justifyContent: "center",
         backgroundColor: "#000000",
     },
