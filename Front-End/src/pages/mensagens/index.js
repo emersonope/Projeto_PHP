@@ -1,6 +1,6 @@
 import {lazy, Suspense} from 'react';
 
-const Mensagens = lazy(() => import('../components/Mensagens/mensagens'));
+const Mensagens = lazy(() => import('../../components/Mensagens/mensagens'));
 
 function Mensagem(){
     return (

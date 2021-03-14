@@ -18,7 +18,7 @@ onMouseOver="shoe_info" onMouseOut="hide_info"
     return (
         <div class={props.categoria} >
            <div class="geral">
-                <img src={require(`../../images/${props.nomeimagem}`).default}></img>
+                <img src={require(`../images/${props.nomeimagem}`).default}></img>
                 <figcaption>
                 <h2>{props.imagem}</h2>
                 <h3>{props.descricao}</h3>

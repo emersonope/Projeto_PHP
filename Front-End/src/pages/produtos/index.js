@@ -6,7 +6,7 @@ import "./produtos.css";
 import { Container, Row } from 'react-bootstrap';
 
 import {lazy, Suspense} from 'react';
-const Produto = lazy(() => import("../components/Menu/produtos/produto"));
+const Produto = lazy(() => import("../../components/produtos/produto"));
 
 function Produtos() {
     const [ produtos, setProdutos] = useState([]);
@@ -40,8 +40,8 @@ function Produtos() {
                     </div>
 
             </div> 
-                <Container fluid >
-                    <Suspense fallback={<div>Carregando ...</div>}>
+                <Container fluid  className="produtos1">
+                    <Suspense fallback={<div>Carregando ...</div>} className="produtos">
                         {produtos && produtos.map(item => <Produto nomeimagem={item.nomeimagem} preco={item.preco} precofinal={item.precofinal} descricao={item.descricao} />)}
                     </Suspense>
                 </Container>

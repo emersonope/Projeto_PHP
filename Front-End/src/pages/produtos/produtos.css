@@ -10,16 +10,11 @@
 
 
 /* edição dos produtos nas páginas produto e inicial*/
-.produtos {
-
+.produtos1 {
     width: 80%;
-    height: 1000px;
-    display: inline-block;
-    margin: -250px auto 0px 200px!important;
-    padding: 10px 0px 10px 10px;
- 
- }
- 
+    display: flex;
+    flex-wrap: wrap;
+}
  
  .geral {
  

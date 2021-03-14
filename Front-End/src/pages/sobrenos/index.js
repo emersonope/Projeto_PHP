@@ -1,12 +1,12 @@
-import rio from "../components/images/rj.jpg"
-import sao from "../components/images/sp.png"
-import norte from "../components/images/rn.jpg"
-import "./produtos.css"
+import rio from "../../components/images/rj.jpg"
+import sao from "../../components/images/sp.png"
+import norte from "../../components/images/rn.jpg"
+
 
 function Sobrenos(){
     return(
         <section class="container">
-            <h2 >Confira Nossos Produtos Mais Vendidos</h2><br/>
+            <h2 >Nossas lojas:</h2><br/>
             <div class="row" >
                 <div class="rol">
                     <div class="card m-3"   >

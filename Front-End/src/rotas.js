@@ -1,17 +1,16 @@
 import { Switch, Route } from 'react-router-dom';
 
-import Produtos from './pages/produtos';
-import Pedidos from './pages/pedidos';
-import Sobrenos from './pages/sobrenos';
-import Mensagens from './pages/mensagens';
+import * as Pages from './pages';
+
 
 function Rotas(){
     return (
         <Switch>
-            <Route exact path="/Produtos" component={ Produtos } />
-            <Route exact path="/Pedidos" component={ Pedidos } />
-            <Route exact path="/Sobrenos" component={ Sobrenos } />
-            <Route exact path="/Mensagens" component={ Mensagens } />
+            <Route exact path="/" component={ Pages.Home } />
+            <Route exact path="/Produtos" component={ Pages.Produtos } />
+            <Route exact path="/Pedidos" component={ Pages.Pedido } />
+            <Route exact path="/Sobrenos" component={ Pages.Sobrenos } />
+            <Route exact path="/Mensagens" component={ Pages.Mensagens } />
         </Switch>
     )
 }

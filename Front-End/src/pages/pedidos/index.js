@@ -1,6 +1,6 @@
 import {lazy, Suspense} from 'react';
 
-const Pedidos = lazy(() => import('../components/Pedidos/pedidos'));
+const Pedidos = lazy(() => import('../../components/Pedidos/pedidos'));
 
 function Pedido(){
     return (
